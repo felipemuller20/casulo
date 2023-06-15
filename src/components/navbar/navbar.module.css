@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.navbar {
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  background-color: #edf2f4;
+  margin-top: 15px;
+}
+
+.logo {
+  margin-left: 100px;
+  width: auto;
+  height: 80px;
+}
+
+.navbar a {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  color: #32345d;
+  font-weight: 700;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 100px;
+  margin-left: 15px;
+}
+
+.navigation li {
+  list-style: none;
+}
+
+.navlink {
+  color: black;
+  margin: 0 1rem;
+  padding-bottom: 5px;
+}
+
+.navlink:hover {
+  border-bottom: 1px solid #32345d;
+  transition: border-width 0.5s ease;
+  color: rgba(0, 0, 0, 0.743);
+}
+
+.active {
+  border-bottom: 0 solid #32345d;
+  transition: border-width 1s ease;
+}
+
+.active:hover {
+  color: black;
+  border-bottom: 2px solid #32345d;
+}
+
+.mobileNavigation a {
+  font-size: 18px;
+  display: inline-block;
+  width: 100%;
+  padding: 0;
+}
+
+.mobileNavigation li a {
+  width: 160px;
+}
+
+.beforeActive {
+  border-width: 2px;
+}
+
+.hamburgerMenu {
+  margin-right: 100px;
+  font-size: 50px;
+  cursor: pointer;
+  color: #32345d;
+}
+
+.mobileNavigation {
+  list-style: none;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.5s;
+  max-height: 0;
+  z-index: 1;
+}
+
+.showLi {
+  max-height: 0;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+
+.show {
+  max-height: 300px;
+}
+
+.show li {
+  max-height: 300px;
+  transition: 0.5s;
+}
+
+@media (min-width: 1106px) {
+  .hamburgerMenu {
+    display: none;
+  }
+  .mobileNavigation {
+    height: 0;
+    transition: 0.5s;
+  }
+}
+
+@media (max-width: 1105px) {
+  .hamburgerMenu {
+    font-size: 2rem;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .navlink:hover {
+    color: #32345dbe;
+    border: none;
+    background-color: #e3e3e32c;
+    border-radius: 10px;
+  }
+
+  .navlink {
+    margin: 0 15px;
+  }
+  
+  .active {
+    border-bottom: 1px solid #32345d;
+  }
+
+  .showLi {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo {
+    height: 70px;
+  }
+
+  .navlink {
+    font-size: 1.8rem;
+  }
+}
