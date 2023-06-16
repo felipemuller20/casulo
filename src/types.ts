@@ -5,3 +5,9 @@ export type MemberInfo = {
   description: string;
   id?: string;
 };
+
+export type ResearchInfo = {
+  title: string;
+  link: string;
+  id: string;
+};
