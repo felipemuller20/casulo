@@ -1,4 +1,5 @@
-import { collection, getDocs, query, orderBy, where, addDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, getDocs, query, orderBy, where, addDoc, serverTimestamp,
+  doc, deleteDoc } from 'firebase/firestore';
 import { auth, db } from '.';
 import { MemberInfo } from '@/types';
 import { successAlert, errorAlert } from '@/utils/alerts';
@@ -40,5 +41,21 @@ export async function createMember(name: string, title: string, description: str
         reject(new Error('Usuário não autenticado! Faça o login para continuar.'));
       }
     });
+  });
+}
+
+export async function deleteMember(id: string) {
+  auth.onAuthStateChanged(async (user) => {
+    if (user) {
+      try {
+        const docRef = doc(db, 'members', id);
+        await deleteDoc(docRef);
+        successAlert('Feito!', `Membro com id ${id} deletado com sucesso.`);
+      } catch (e: any) {
+        errorAlert('Oopss..', `Erro ao deletar: ${e.message}`);
+      }
+    } else {
+      errorAlert('Usuário não autenticado!', 'Faça o login para continuar.');
+    }
   });
 }
