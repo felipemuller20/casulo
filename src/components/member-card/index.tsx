@@ -1,13 +1,7 @@
+import { MemberInfo } from '../../types';
 import styles from './member-card.module.css';
 
-type MemberCardProps = {
-  image: string;
-  name: string;
-  title: string;
-  description: string;
-};
-
-export default function MemberCard({ image, name, title, description }: MemberCardProps) {
+export default function MemberCard({ image, name, title, description }: MemberInfo) {
   return (
     <div className={ styles.cardContainer }>
       <img src={ image } alt={ name } />

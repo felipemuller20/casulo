@@ -1,0 +1,55 @@
+.addMember button:disabled {
+  background-color: rgb(198, 198, 198);
+  cursor: wait;
+}
+
+.addMember {
+  display: flex;
+}
+
+.addMember > * {
+  flex-basis: 50%;
+  box-sizing: border-box;
+}
+
+.addMember form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addMember input, .addMember textarea {
+  width: 80%;
+  padding: 8px 25px;
+  border-radius: 10px;
+  border: none;
+}
+
+.addMember label {
+  align-self: flex-start;
+  margin-left: 80px;
+}
+
+.addMember button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #32345d;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.addMember input[type="file"] {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #32345d;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.addMember button:hover {
+  background-color: #32345d6f;
+}

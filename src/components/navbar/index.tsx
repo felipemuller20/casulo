@@ -19,7 +19,7 @@ function NavBar() {
     },
     {
       name: 'Quem somos',
-      link: '/who',
+      link: '/members',
     },
     {
       name: 'Nossas pesquisas',

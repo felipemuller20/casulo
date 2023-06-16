@@ -1,7 +1,9 @@
 import { initializeApp } from 'firebase/app';
-import { getAuth, setPersistence, browserSessionPersistence } from 'firebase/auth';
+import { getAuth, setPersistence, browserSessionPersistence, signInWithEmailAndPassword } from 'firebase/auth';
 import { getStorage } from 'firebase/storage';
 import { getFirestore } from 'firebase/firestore';
+import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context';
+import { successAlert, errorAlert } from '@/utils/alerts';
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -29,4 +31,15 @@ setPersistence(auth, browserSessionPersistence)
 
 export function isAuthenticated() {
   return !!auth.currentUser; // retorna bool com certeza
+}
+
+export async function authenticateLogin(event: React.FormEvent<HTMLFormElement>, email: string, password: string, router: AppRouterInstance) {
+  event.preventDefault();
+  try {
+    await signInWithEmailAndPassword(auth, email, password);
+    successAlert('Feito!', 'Login realizado com sucesso');
+    router.push('/');
+  } catch (e: any) {
+    errorAlert('Erro ao realizar o login', 'Usuário ou senha incorretos.');
+  }
 }

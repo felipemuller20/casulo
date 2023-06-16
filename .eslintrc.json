@@ -3,6 +3,7 @@
   "rules": {
     "import/no-unresolved": "off",
     "max-len": "off",
-    "react/no-unescaped-entities": "off"
+    "react/no-unescaped-entities": "off",
+    "sonarjs/cognitive-complexity": "off"
   }
 }
