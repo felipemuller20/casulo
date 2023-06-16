@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-.about {
+.who {
   display: flex;
   flex-direction: column;
-  margin-left: 100px;
   background-image: url(/casulinho.png);
   background-size: 475px;
   background-position: right -130px top 25px;
@@ -12,7 +11,7 @@
   position: relative;
 }
 
-.about::before {
+.who::before {
   content: "";
   position: absolute;
   top: 0;
@@ -22,31 +21,22 @@
   background-color: #edf2f4ca;
 }
 
-.about h1, .about h2, .about p {
+.who h1 {
+  text-align: center;
+  font-size: 36px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+.who section {
+  margin-inline: 100px;
   z-index: 1;
-  color: #32345d;
 }
 
-.about h1 {
-  font-size: 50px;
-  margin: 50px 0 25px 0;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
-}
-
-.about h1:nth-child(2) {
-  margin-top: 0;
-}
-
-.about p {
-  font-size: 28px;
-  max-width: 950px;
-  margin-bottom: 10px;
-  text-align: justify;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-}
-
-.about p::first-letter {
-  margin-left: 15px;
+.who main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
