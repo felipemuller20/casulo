@@ -40,3 +40,21 @@
   align-items: center;
   justify-content: center;
 }
+
+@media (max-width: 590px) {
+  .who section {
+    margin-inline: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .who section {
+    margin-inline: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .who section {
+    margin-inline: 5px;
+  }
+}

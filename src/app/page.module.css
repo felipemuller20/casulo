@@ -16,3 +16,52 @@
   bottom: 100px;
   left: 0;
 }
+
+@media (max-width: 950px) {
+  .container {
+    background-size: 375px;
+  }
+  .escrito {
+    width: 350px;
+    bottom: 250px;
+  }
+}
+
+@media (max-width: 666px) {
+  .container {
+    background-size: 325px;
+  }
+  .escrito {
+    width: 250px;
+    bottom: 345px;
+  }
+}
+
+@media (max-width: 530px) {
+  .container {
+    background-size: 300px;
+  }
+  .escrito {
+    width: 230px;
+    bottom: 385px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    background-size: 250px;
+  }
+  .escrito {
+    width: 200px;
+    bottom: 445px;
+    left: -35px;
+  }
+}
+
+@media (max-width: 388px) {
+  .escrito {
+    width: 200px;
+    bottom: 445px;
+    left: -65px;
+  }
+}

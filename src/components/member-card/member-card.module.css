@@ -29,3 +29,36 @@
   color: black;
   text-align: justify;
 }
+
+@media (max-width: 1360px) {
+  .cardContainer {
+    width: 350px;
+  }
+}
+
+@media (max-width: 955px) {
+  .cardContainer {
+    width: 550px;
+  }
+}
+
+@media (max-width: 390px) {
+  .cardContainer h2 {
+    font-size: 20px;
+  }
+
+  .cardContainer h3 {
+    font-size: 18px
+  }
+
+  .cardContainer p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 330px) {
+  .cardContainer img {
+    width: 80px;
+    height: 80px;
+  }
+}

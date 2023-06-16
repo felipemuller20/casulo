@@ -34,10 +34,6 @@
   font-weight: 800;
 }
 
-.about h1:nth-child(2) {
-  margin-top: 0;
-}
-
 .about p {
   font-size: 28px;
   max-width: 950px;
@@ -45,8 +41,85 @@
   text-align: justify;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  color: black;
 }
 
 .about p::first-letter {
   margin-left: 15px;
+}
+
+@media (max-width: 1104px) {
+  .about p {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 880px) {
+  .about h1 {
+    font-size: 40px;
+  }
+  .about p {
+    max-width: 600px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 880px) {
+  .about h1 {
+    font-size: 40px;
+  }
+  .about p {
+    max-width: 475px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about {
+    margin-left: 50px;
+  }
+  .about h1 {
+    font-size: 36px;
+  }
+  .about p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 545px) {
+  .about h1 {
+    font-size: 32px;
+    margin: 25px 0 15px 0;
+  }
+  .about p {
+    max-width: 400px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  .about {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 444px) {
+  .about p {
+    max-width: 350px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 405px) {
+  .about {
+    text-align: center
+  }
+
+  .about h1 {
+    font-size: 28px;
+  }
+  .about p {
+    width: 90%;
+    font-size: 18px;
+  }
 }
