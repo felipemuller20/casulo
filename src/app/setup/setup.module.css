@@ -20,33 +20,3 @@
   background-color: #5c5c5c;
   cursor: wait;
 }
-
-.researchesContainer {
-  margin-left: 20px;
-}
-
-.researchesContainer input {
-  border: none;
-  padding: 8px 15px;
-  border-radius: 10px;
-  margin: 15px;
-}
-
-.researchesContainer button {
-  padding: 8px 15px;
-  border-radius: 10px;
-  border: none;
-  color: white;
-  background-color: #32345d;
-  cursor: pointer;
-}
-
-.researchesContainer button:hover {
-  background-color: #32345dc8
-}
-.researchesContainer select {
-  padding: 8px 15px;
-  border: none;
-  border-radius: 10px;
-  margin: 10px;
-}
