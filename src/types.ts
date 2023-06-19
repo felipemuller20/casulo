@@ -11,3 +11,11 @@ export type ResearchInfo = {
   link: string;
   id: string;
 };
+
+export type NewsInfo = {
+  title: string;
+  text: string;
+  image?: string;
+  id: string;
+  createdAt: Date;
+};

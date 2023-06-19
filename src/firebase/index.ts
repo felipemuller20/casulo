@@ -38,7 +38,7 @@ export async function authenticateLogin(event: React.FormEvent<HTMLFormElement>,
   try {
     await signInWithEmailAndPassword(auth, email, password);
     successAlert('Feito!', 'Login realizado com sucesso');
-    router.push('/');
+    router.push('/setup');
   } catch (e: any) {
     errorAlert('Erro ao realizar o login', 'Usuário ou senha incorretos.');
   }

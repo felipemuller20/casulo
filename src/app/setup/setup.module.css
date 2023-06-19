@@ -1,4 +1,4 @@
-.researchToggler {
+.toggler {
   font-size: 28px;
   display: flex;
   align-items: center;
@@ -12,7 +12,7 @@
   cursor: pointer;
 }
 
-.researchToggler:hover {
+.toggler:hover {
   background-color: #32345dc8;
 }
 

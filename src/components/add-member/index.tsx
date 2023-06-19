@@ -40,7 +40,7 @@ export default function AddMemberPage() {
 
   async function publishImage() {
     if (!imageUpload) return errorAlert('Oops..', 'Selecione uma imagem');
-    const imageRef = ref(storage, `posts/cover/${imageUpload.name + v4()}`);
+    const imageRef = ref(storage, `members/${imageUpload.name + v4()}`);
     try {
       const uploadedImage = await uploadBytes(imageRef, imageUpload);
       const imageUrl = await getDownloadURL(uploadedImage.ref);

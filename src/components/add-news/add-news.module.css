@@ -1,0 +1,47 @@
+.addNews {
+  margin-left: 30px;
+}
+
+.addNews form {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.addNews input {
+  border-radius: 10px;
+  border: none;
+  padding: 10px 20px;
+}
+
+.addNews textarea {
+  border-radius: 10px;
+  border: none;
+  padding: 10px 20px;
+  height: 100px;
+}
+
+.addNews input[type=file] {
+  background-color: #32345d;
+  color: white;
+  align-self: center;
+  margin-block: 15px;
+  cursor: pointer;
+}
+
+.addNews button {
+  align-self: center;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  background-color: #32345d;
+  color: white;
+  cursor: pointer
+}
+
+.addNews select {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin: 10px 10px 0 0;
+}
