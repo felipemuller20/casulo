@@ -12,7 +12,7 @@ export default function About() {
         O CaSuLo é ponto de encontro entre a academia,
         mercado e profissionais para análise das tendências na construção das carreiras contemporâneas.
       </p>
-      <h1>Por que o "CaSulo" ?</h1>
+      <h1>Por que "CaSulo" ?</h1>
       <p>
         O casulo representa um movimento para a transformação e desenvolvimento. Assim como as experiências das trajetórias de carreira, as pesquisas também são dinâmicas,
         passando por momentos de incubação, maturação e transformação
