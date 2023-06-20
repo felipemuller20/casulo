@@ -1,3 +1,14 @@
+@keyframes revealImg {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    filter: blur(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .container {
   min-height: calc(100vh - 115px);
   background-image: url('/casulinho.png');
@@ -9,21 +20,19 @@
   margin-left: 100px;
 }
 
-.escrito {
+.container img {
   width: 450px;
   height: auto;
   position: absolute;
   bottom: 100px;
   left: 0;
+  opacity: 0;
+  animation: revealImg 2s ease-out .7s forwards;
 }
 
 @media (max-width: 950px) {
-  /* .container {
-    background-size: 375px;
-  } */
-  .escrito {
+  .container img {
     width: 350px;
-    /* bottom: 250px; */
   }
 }
 
@@ -31,84 +40,38 @@
   .container {
     background-size: 450px;
   }
-  .escrito {
+  .container img {
     width: 300px;
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 700px) {
   .container {
-    background-size: 425px;
+    background-image: none;
+    margin-left: 0;
   }
-  .escrito {
-    width: 300px;
-  }
-}
-
-@media (max-width: 640px) {
-  .container {
-    background-size: 425px;
-    margin-left: 50px;
-  }
-  .escrito {
-    width: 290px;
-  }
-}
-
-@media (max-width: 560px) {
-  .container {
-    background-size: 400px;
-  }
-  .escrito {
-    width: 230px;
-    bottom: 125px;
+  .container img {
+    filter: blur(5px);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 450px;
+    height: auto;
   }
 }
 
 @media (max-width: 500px) {
-  .container {
-    background-size: 390px;
-  }
-  .escrito {
-    left: -15px;
-    bottom: 125px;
+  .container img {
+    width: 400px;
   }
 }
 
-@media (max-width: 480px) {
-  .container {
-    background-size: 380px;
-  }
-  .escrito {
-    left: -15px;
-    bottom: 125px;
-  }
-}
-
-@media (max-width: 450px) {
-  .container {
-    background-size: 370px;
-  }
-  .escrito {
-    left: -25px;
-    bottom: 135px;
-  }
-}
-
-@media (max-width: 430px) {
-  .container {
-    background-size: 360px;
-  }
-  .escrito {
-    width: 220px;
-    /* bottom: 175px; */
-  }
-}
-
-@media (max-width: 388px) {
-  .escrito {
-    width: 210px;
-    bottom: 100px;
-    left: -35px;
+@media (max-width: 420px) {
+  .container img {
+    width: 85%;
   }
 }
