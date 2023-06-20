@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import { Timestamp } from 'firebase/firestore';
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+import remarkGfm from 'remark-gfm';
 import styles from './news-card.module.css';
 import { convertToDate } from '@/utils/dateFormat';
 
@@ -15,7 +17,9 @@ export default function NewsCard({ title, text, image, creation }: NewsCardProps
     <div className={ styles.newsCard }>
       <h2>{title}</h2>
       { image && <Image src={ image } alt={ title } width={ 1000 } height={ 1000 } />}
-      <p>{text}</p>
+      <ReactMarkdown remarkPlugins={ [remarkGfm] }>
+        {text}
+      </ReactMarkdown>
       {creation && <span>{convertToDate(creation)}</span>}
     </div>
   );

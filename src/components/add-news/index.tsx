@@ -106,6 +106,7 @@ export default function AddNews() {
             id="text"
             value={ content }
             onChange={ ({ target }) => setContent(target.value) }
+            placeholder="Para link: [Clique aqui](http://www.link.com.br)"
           />
           <input type="file" accept="image/*" onChange={ handleImageChange } />
           <button disabled={ loading }>Criar notícia</button>
