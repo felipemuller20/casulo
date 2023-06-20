@@ -8,6 +8,7 @@ import { createNew, deleteNew, readAllNews } from '@/firebase/utils-news';
 import { errorAlert } from '@/utils/alerts';
 import { storage } from '@/firebase';
 import { NewsInfo } from '@/types';
+import NewsCard from '../news-card';
 
 export default function AddNews() {
   const formRef = useRef<HTMLFormElement>(null);
@@ -18,6 +19,7 @@ export default function AddNews() {
   const [newsIsOpen, setNewsIsOpen] = useState(false);
   const [allNews, setAllNews] = useState<NewsInfo[]>([]);
   const [selectedNew, setSelectedNew] = useState('');
+  const [previewUrl, setPreviewUrl] = useState('');
 
   async function publishImage() {
     if (imageUpload) {
@@ -36,6 +38,7 @@ export default function AddNews() {
     setContent('');
     setTitle('');
     setImageUpload(null);
+    setPreviewUrl('');
   }
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
@@ -61,6 +64,8 @@ export default function AddNews() {
   function handleImageChange(event: React.ChangeEvent<HTMLInputElement>) {
     if (event.target.files) {
       setImageUpload(event.target.files[0]);
+      const url = URL.createObjectURL(event.target.files[0]);
+      setPreviewUrl(url);
     }
   }
 
@@ -87,39 +92,46 @@ export default function AddNews() {
 
   return (
     <div className={ styles.addNews }>
-      <h2>Criar notícia:</h2>
-      <form ref={ formRef } onSubmit={ handleSubmit }>
-        <label htmlFor="title">Título</label>
-        <input
-          id="title"
-          value={ title }
-          onChange={ ({ target }) => setTitle(target.value) }
-        />
-        <label htmlFor="text">Conteúdo</label>
-        <textarea
-          id="text"
-          value={ content }
-          onChange={ ({ target }) => setContent(target.value) }
-        />
-        <input type="file" accept="image/*" onChange={ handleImageChange } />
-        <button disabled={ loading }>Criar notícia</button>
-      </form>
-      <h2>Deletar notícia:</h2>
       <div>
-        <select
-          onClick={ handleResearchSelect }
-          value={ selectedNew }
-          onChange={ ({ target }) => setSelectedNew(target.value) }
-        >
-          <option value="">Selecione uma notícia</option>
-          {newsIsOpen && allNews.map((news) => (
-            <option key={ news.id } value={ news.title }>
-              {news.title}
-            </option>
-          ))}
-        </select>
-        <button onClick={ handleDeleteNews } disabled={ loading }>Deletar</button>
+        <h2>Criar notícia:</h2>
+        <form ref={ formRef } onSubmit={ handleSubmit }>
+          <label htmlFor="title">Título</label>
+          <input
+            id="title"
+            value={ title }
+            onChange={ ({ target }) => setTitle(target.value) }
+          />
+          <label htmlFor="text">Conteúdo</label>
+          <textarea
+            id="text"
+            value={ content }
+            onChange={ ({ target }) => setContent(target.value) }
+          />
+          <input type="file" accept="image/*" onChange={ handleImageChange } />
+          <button disabled={ loading }>Criar notícia</button>
+        </form>
+        <h2>Deletar notícia:</h2>
+        <div>
+          <select
+            onClick={ handleResearchSelect }
+            value={ selectedNew }
+            onChange={ ({ target }) => setSelectedNew(target.value) }
+          >
+            <option value="">Selecione uma notícia</option>
+            {newsIsOpen && allNews.map((news) => (
+              <option key={ news.id } value={ news.title }>
+                {news.title}
+              </option>
+            ))}
+          </select>
+          <button onClick={ handleDeleteNews } disabled={ loading }>Deletar</button>
+        </div>
       </div>
+      <NewsCard
+        title={ title }
+        text={ content }
+        image={ previewUrl }
+      />
     </div>
   );
 }

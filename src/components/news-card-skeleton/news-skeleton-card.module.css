@@ -1,0 +1,48 @@
+.container {
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.title {
+  width: 50%;
+  height: 7%;
+  align-self: center;
+  margin-top: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  animation: skeletonPuls 1s linear infinite alternate;
+}
+
+.image {
+  width: 95%;
+  height: 45%;
+  align-self: center;
+  margin-top: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  animation: skeletonPuls 1s linear infinite alternate;
+}
+
+.content {
+  width: 95%;
+  height: 7%;
+  align-self: center;
+  margin-top: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  animation: skeletonPuls 1s linear infinite alternate;
+}
+
+@keyframes skeletonPuls {
+  0% {
+    background-color: hsl(200, 20%, 100%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 80%);
+  }
+}

@@ -1,3 +1,5 @@
+import { Timestamp } from 'firebase/firestore';
+
 export type MemberInfo = {
   image: string;
   name: string;
@@ -17,5 +19,5 @@ export type NewsInfo = {
   text: string;
   image?: string;
   id: string;
-  createdAt: Date;
+  createdAt: Timestamp;
 };

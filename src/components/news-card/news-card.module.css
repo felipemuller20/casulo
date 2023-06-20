@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.newsCard {
+  width: 300px;
+  min-height: 350px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 5px 5px 20px 2px #32345d;
+  margin: 15px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+.newsCard h2 {
+  color: #32345d;
+  margin: 10px;
+}
+
+.newsCard img {
+  width: 95%;
+  height: auto;
+  max-height: 150px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.newsCard p {
+  text-align: justify;
+  padding-inline: 8px;
+}
+
+.newsCard p::first-letter {
+  padding-left: 15px;
+}
+
+.newsCard span {
+  display: block;
+  text-align: start;
+  margin: 8px;
+  font-style: italic;
+  color: #32345d;
+  font-weight: 600;
+}

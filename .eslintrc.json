@@ -4,6 +4,7 @@
     "import/no-unresolved": "off",
     "max-len": "off",
     "react/no-unescaped-entities": "off",
-    "sonarjs/cognitive-complexity": "off"
+    "sonarjs/cognitive-complexity": "off",
+    "react/require-default-props": "off"
   }
 }
