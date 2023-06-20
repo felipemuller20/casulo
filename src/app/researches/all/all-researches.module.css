@@ -19,7 +19,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #edf2f4e9;
+  background-color: #edf2f4f1;
 }
 
 .allContainer h1 {
@@ -30,7 +30,9 @@
 }
 
 .allContainer ul {
-  margin-inline: 100px;
+  /* margin-inline: 100px; */
+  margin-left: 100px;
+  margin-right: 100px;
   margin-block: 35px;
   list-style: disc;
   z-index: 1;
@@ -39,19 +41,31 @@
 .allContainer li {
   margin-block: 15px;
   z-index: 1;
-  max-width: 850px;
+  max-width: 80%;
   text-align: justify;
 }
 
 .allContainer a {
   color: black;
-  font-size: 24px;
+  font-size: 18px;
   z-index: 1;
+}
+
+@media (max-width: 1030px) {
+  .allContainer li {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .allContainer li {
+    margin-right: 10px;
+  }
 }
 
 @media (max-width: 500px) {
   .allContainer a {
-    font-size: 20px;
+    font-size: 15px;
   }
   .allContainer ul {
     margin-inline: 30px;

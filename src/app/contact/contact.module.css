@@ -9,7 +9,6 @@
   background-repeat: no-repeat;
   height: calc(100vh - 115px);
   position: relative;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .contact::before {
@@ -28,6 +27,7 @@
   color: #32345d;
   font-size: 36px;
   z-index: 1;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .contact main {
@@ -55,6 +55,7 @@
 
 .a span {
   margin-left: 10px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media (max-width: 400px) {
