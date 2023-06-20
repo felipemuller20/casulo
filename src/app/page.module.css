@@ -1,5 +1,5 @@
 .container {
-  height: calc(100vh - 115px);
+  min-height: calc(100vh - 115px);
   background-image: url('/casulinho.png');
   background-repeat: no-repeat;
   background-position: right -130px top 25px;

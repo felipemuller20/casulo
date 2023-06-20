@@ -3,7 +3,6 @@
 .newsCard {
   width: 300px;
   height: fit-content;
-  /* min-height: 350px; */
   border: none;
   border-radius: 8px;
   box-shadow: 5px 5px 20px 2px #32345d;
