@@ -2,7 +2,8 @@
 
 .newsCard {
   width: 300px;
-  min-height: 350px;
+  height: fit-content;
+  /* min-height: 350px; */
   border: none;
   border-radius: 8px;
   box-shadow: 5px 5px 20px 2px #32345d;
@@ -19,7 +20,7 @@
 .newsCard img {
   width: 95%;
   height: auto;
-  max-height: 300px;
+  max-height: 175px;
   text-align: center;
   margin-bottom: 10px;
 }
