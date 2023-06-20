@@ -18,50 +18,97 @@
 }
 
 @media (max-width: 950px) {
-  .container {
+  /* .container {
     background-size: 375px;
-  }
+  } */
   .escrito {
     width: 350px;
-    bottom: 250px;
+    /* bottom: 250px; */
   }
 }
 
-@media (max-width: 666px) {
+@media (max-width: 780px) {
   .container {
-    background-size: 325px;
+    background-size: 450px;
   }
   .escrito {
-    width: 250px;
-    bottom: 345px;
+    width: 300px;
   }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 680px) {
   .container {
-    background-size: 300px;
+    background-size: 425px;
+  }
+  .escrito {
+    width: 300px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    background-size: 425px;
+    margin-left: 50px;
+  }
+  .escrito {
+    width: 290px;
+  }
+}
+
+@media (max-width: 560px) {
+  .container {
+    background-size: 400px;
   }
   .escrito {
     width: 230px;
-    bottom: 385px;
+    bottom: 125px;
   }
 }
 
 @media (max-width: 500px) {
   .container {
-    background-size: 250px;
+    background-size: 390px;
   }
   .escrito {
-    width: 200px;
-    bottom: 445px;
-    left: -35px;
+    left: -15px;
+    bottom: 125px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    background-size: 380px;
+  }
+  .escrito {
+    left: -15px;
+    bottom: 125px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    background-size: 370px;
+  }
+  .escrito {
+    left: -25px;
+    bottom: 135px;
+  }
+}
+
+@media (max-width: 430px) {
+  .container {
+    background-size: 360px;
+  }
+  .escrito {
+    width: 220px;
+    /* bottom: 175px; */
   }
 }
 
 @media (max-width: 388px) {
   .escrito {
-    width: 200px;
-    bottom: 445px;
-    left: -65px;
+    width: 210px;
+    bottom: 100px;
+    left: -35px;
   }
 }
