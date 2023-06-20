@@ -60,3 +60,9 @@
     font-size: 30px;
   }
 }
+
+@media (max-width: 880px) {
+  .allContainer::before {
+    background-color: #edf2f4f1;
+  }
+}

@@ -34,15 +34,20 @@
   z-index: 1;
   margin-top: 50px;
   font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
   margin-block: 15px;
+  width: 290px;
 }
 
 .a {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   text-decoration: none;
   color: black;
@@ -50,4 +55,11 @@
 
 .a span {
   margin-left: 10px;
+}
+
+@media (max-width: 400px) {
+  .contact h1 {
+    font-size: 32px;
+    margin-inline: 30px;
+  }
 }

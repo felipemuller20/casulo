@@ -36,3 +36,9 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+@media (max-width: 880px) {
+  .newsPage::before {
+    background-color: #edf2f4f1;
+  }
+}

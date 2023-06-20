@@ -59,18 +59,11 @@
     font-size: 40px;
   }
   .about p {
-    max-width: 600px;
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 880px) {
-  .about h1 {
-    font-size: 40px;
-  }
-  .about p {
     max-width: 475px;
     font-size: 24px;
+  }
+  .about::before {
+    background-color: #edf2f4f7;
   }
 }
 
