@@ -12,8 +12,8 @@
 }
 
 .cardContainer img {
-  width: 100px;
-  height: 100px;
+  width: 105px;
+  height: auto;
   border-radius: 100%;
   float: left;
   margin-right: 15px;
