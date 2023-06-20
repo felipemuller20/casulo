@@ -39,6 +39,8 @@
   max-width: 950px;
   margin-bottom: 10px;
   text-align: justify;
+  hyphens: auto;
+  word-spacing: -1.5px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: black;

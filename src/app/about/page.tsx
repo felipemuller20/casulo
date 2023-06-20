@@ -14,7 +14,7 @@ export default function About() {
       </p>
       <h1>Por que "CaSuLo" ?</h1>
       <p>
-        O CaSuLo representa um movimento para a transformação e desenvolvimento. Assim como as experiências das trajetórias de carreira, as pesquisas também são dinâmicas,
+        O casulo representa um movimento para a transformação e desenvolvimento. Assim como as experiências das trajetórias de carreira, as pesquisas também são dinâmicas,
         passando por momentos de incubação, maturação e transformação.
       </p>
     </div>
