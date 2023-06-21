@@ -5,6 +5,7 @@
     "max-len": "off",
     "react/no-unescaped-entities": "off",
     "sonarjs/cognitive-complexity": "off",
-    "react/require-default-props": "off"
+    "react/require-default-props": "off",
+    "react/jsx-no-useless-fragment": "off"
   }
 }
