@@ -1,19 +1,8 @@
-'use client';
-
-import { useEffect, useState } from 'react';
 import styles from './all-researches.module.css';
 import { readAllResearches } from '@/firebase/utils-researches';
-import { ResearchInfo } from '@/types';
 
-export default function AllResearches() {
-  const [researches, setResearches] = useState<ResearchInfo[]>([]);
-  useEffect(() => {
-    async function fetchResearches() {
-      const getAll = await readAllResearches();
-      setResearches(getAll);
-    }
-    fetchResearches();
-  }, []);
+export default async function AllResearches() {
+  const researches = await readAllResearches();
 
   return (
     <div className={ styles.allContainer }>

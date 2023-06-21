@@ -23,11 +23,15 @@
   background-color: rgba(237, 242, 244, 0.95);
 }
 
-.allContainer h1 {
+.allContainer h1, .researchPage h2 {
   z-index: 1;
   text-align: center;
   color: rgb(50, 52, 93);
   font-size: 36px;
+}
+
+.researchPage h2 {
+  font-size: 30px;
 }
 
 .allContainer ul {
