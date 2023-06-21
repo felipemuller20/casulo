@@ -6,6 +6,7 @@ import styles from './members.module.css';
 import { readAllMembers } from '@/firebase/utils-members';
 import { MemberInfo } from '@/types';
 import MemberCardSkeleton from '@/components/member-card-skeleton';
+import { sortByAngela } from '@/utils/angelaAlwaysFirst';
 
 export default function Members() {
   const [members, setMembers] = useState<MemberInfo[]>([]);
@@ -14,7 +15,8 @@ export default function Members() {
   useEffect(() => {
     async function fetchMembers() {
       const allMembers = await readAllMembers();
-      setMembers(allMembers);
+      const newList = sortByAngela(allMembers);
+      setMembers(newList);
       setLoading(false);
     }
     fetchMembers();
