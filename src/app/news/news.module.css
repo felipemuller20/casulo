@@ -5,8 +5,9 @@
   flex-direction: column;
   background-image: url(/casulinho.png);
   background-size: 475px;
-  background-position: right -130px top 25px;
+  background-position: right -130px top 135px;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   min-height: calc(100vh - 115px);
   position: relative;
 }
