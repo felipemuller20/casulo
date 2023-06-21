@@ -22,7 +22,7 @@
 }
 
 .addNews input[type=file] {
-  background-color: #32345d;
+  background-color: rgb(50, 52, 93);
   color: white;
   align-self: center;
   margin-block: 15px;
@@ -34,7 +34,7 @@
   padding: 10px 25px;
   border: none;
   border-radius: 10px;
-  background-color: #32345d;
+  background-color: rgb(50, 52, 93);
   color: white;
   cursor: pointer
 }

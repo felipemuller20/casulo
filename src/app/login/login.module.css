@@ -13,7 +13,7 @@
   justify-content: center;
   width: 350px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  box-shadow: 5px 5px 10px #32345d;
+  box-shadow: 5px 5px 10px rgb(50, 52, 93);
   border-radius: 10px;
   padding: 30px 15px;
 }
@@ -33,7 +33,7 @@
   border-radius: 10px;
   cursor: pointer;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #32345d;
+  background-color: rgb(50, 52, 93);
   color: white;
 }
 
@@ -42,6 +42,6 @@
 }
 
 .form label {
-  color: #32345d;
+  color: rgb(50, 52, 93);
   align-self: flex-start;
 }

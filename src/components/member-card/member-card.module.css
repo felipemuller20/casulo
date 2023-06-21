@@ -4,10 +4,10 @@
   border-bottom: 2px solid black;
   padding: 15px;
   width: 550px;
-  color: #32345d;
+  color: rgb(50, 52, 93);
   margin: 15px;
   font-family: 'Open Sans', sans-serif;
-  box-shadow: 5px 5px 10px #32345d;
+  box-shadow: 5px 5px 10px rgb(50, 52, 93);
   border-radius: 10px;
 }
 

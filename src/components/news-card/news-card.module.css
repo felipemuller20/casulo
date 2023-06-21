@@ -5,14 +5,14 @@
   height: fit-content;
   border: none;
   border-radius: 8px;
-  box-shadow: 5px 5px 20px 2px #32345d;
+  box-shadow: 5px 5px 20px 2px rgb(50, 52, 93);
   margin: 15px;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
 
 .newsCard h2 {
-  color: #32345d;
+  color: rgb(50, 52, 93);
   margin: 10px;
 }
 
@@ -40,6 +40,6 @@
   text-align: start;
   margin: 8px;
   font-style: italic;
-  color: #32345d;
+  color: rgb(50, 52, 93);
   font-weight: 600;
 }

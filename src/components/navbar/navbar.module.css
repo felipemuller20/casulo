@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: space-between;
   height: 100px;
-  background-color: #edf2f4;
+  background-color: rgb(237, 242, 244);
   margin-top: 15px;
 }
 
@@ -19,7 +19,7 @@
 .navbar a {
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
-  color: #32345d;
+  color: rgb(50, 52, 93);
   font-weight: 700;
 }
 
@@ -42,19 +42,19 @@
 }
 
 .navlink:hover {
-  border-bottom: 1px solid #32345d;
+  border-bottom: 1px solid rgb(50, 52, 93);
   transition: border-width 0.5s ease;
   color: rgba(0, 0, 0, 0.743);
 }
 
 .active {
-  border-bottom: 0 solid #32345d;
+  border-bottom: 0 solid rgb(50, 52, 93);
   transition: border-width 1s ease;
 }
 
 .active:hover {
   color: black;
-  border-bottom: 2px solid #32345d;
+  border-bottom: 2px solid rgb(50, 52, 93);
 }
 
 .mobileNavigation a {
@@ -76,7 +76,7 @@
   margin-right: 100px;
   font-size: 50px;
   cursor: pointer;
-  color: #32345d;
+  color: rgb(50, 52, 93);
 }
 
 .mobileNavigation {
@@ -134,7 +134,7 @@
   }
   
   .active {
-    border-bottom: 1px solid #32345d;
+    border-bottom: 1px solid rgb(50, 52, 93);
   }
 
   .showLi {
