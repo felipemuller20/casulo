@@ -1,6 +1,8 @@
 import styles from './all-researches.module.css';
 import { readAllResearches } from '@/firebase/utils-researches';
 
+export const revalidate = 30;
+
 export default async function AllResearches() {
   const researches = await readAllResearches();
 

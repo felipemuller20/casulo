@@ -3,6 +3,8 @@ import styles from './members.module.css';
 import { readAllMembers } from '@/firebase/utils-members';
 import { sortByAngela } from '@/utils/angelaAlwaysFirst';
 
+export const revalidate = 30;
+
 export default async function Members() {
   const allMembers = await readAllMembers();
   const members = sortByAngela(allMembers);

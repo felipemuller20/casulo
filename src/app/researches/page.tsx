@@ -1,6 +1,8 @@
 import styles from './researches.module.css';
 import RouterButton from './routerButton';
 
+export const revalidate = 30;
+
 export default function Researches() {
   return (
     <div className={ styles.researchPage }>

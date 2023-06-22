@@ -2,6 +2,8 @@ import styles from './news.module.css';
 import { readAllNews } from '@/firebase/utils-news';
 import NewsCard from '@/components/news-card';
 
+export const revalidate = 30;
+
 export default async function NewsPage() {
   const news = await readAllNews();
 
