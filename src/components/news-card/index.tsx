@@ -16,10 +16,12 @@ export default function NewsCard({ title, text, image, creation }: NewsCardProps
   return (
     <div className={ styles.newsCard }>
       <h2>{title}</h2>
-      { image && <Image src={ image } alt={ title } width={ 1000 } height={ 1000 } />}
-      <ReactMarkdown remarkPlugins={ [remarkGfm] }>
-        {text}
-      </ReactMarkdown>
+      <section>
+        { image && <Image src={ image } alt={ title } width={ 1000 } height={ 1000 } />}
+        <ReactMarkdown remarkPlugins={ [remarkGfm] }>
+          {text}
+        </ReactMarkdown>
+      </section>
       {creation && <span>{convertToDate(creation)}</span>}
     </div>
   );
