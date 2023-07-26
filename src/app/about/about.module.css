@@ -46,6 +46,13 @@
   color: black;
 }
 
+.about a {
+  font-size: 24px;
+  color: rgb(49,52,93);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
 @media (max-width: 1104px) {
   .about p {
     max-width: 750px;
@@ -59,6 +66,9 @@
   .about p {
     max-width: 475px;
     font-size: 24px;
+  }
+  .about a {
+    font-size: 22px;
   }
   .about::before {
     background-color: rgba(237, 242, 244, 0.97);
@@ -75,6 +85,9 @@
   .about p {
     font-size: 22px;
   }
+  .about a {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 545px) {
@@ -85,6 +98,9 @@
   .about p {
     max-width: 400px;
     font-size: 18px;
+  }
+  .about a {
+    font-size: 16px;
   }
 }
 
